@@ -11,10 +11,10 @@ The app includes just one function:
 To set this up, you'll need to have an [Azure Portal account](https://portal.azure.com).
 
 
-1. Fork this repository.
+1. Fork this repository
 2. [Create a **v2** Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function).
-3. [Set up your function to deploy from GitHub](https://docs.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-create-function-app-github-continuous). Point it to your fork of this repository.
-4. Set up the following [App Settings for your Azure Function App](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
+3. [Configure your function to deploy from your fork](https://docs.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-create-function-app-github-continuous)
+4. Set up the following [App Settings for your Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
 
 | Setting | Value
 | -------- | -------

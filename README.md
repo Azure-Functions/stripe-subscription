@@ -18,6 +18,6 @@ To set this up, you'll need to have an [Azure Portal account](https://portal.azu
 
 | Setting | Value
 | -------- | -------
-| `SubscriptionSuccessUrl` where to redirect a users browser to if the subscription was **successful**
-| `SubscriptionFailureUrl` where to redirect a users browser to if the subscription **failed**
-| `StripeApiSecretKey` your **secret key**  from the *Developers > API keys* in your Stripe dashboard
+| `SubscriptionSuccessUrl` | where to redirect a users browser to if the subscription was **successful**
+| `SubscriptionFailureUrl` | where to redirect a users browser to if the subscription **failed**
+| `StripeApiSecretKey` | your **secret key**  from the *Developers > API keys* in your Stripe dashboard

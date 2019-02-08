@@ -4,6 +4,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Stripe;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace StripeSubscription
         [FunctionName("StartSubscription")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post")]
-            HttpRequest request, TraceWriter log, ExecutionContext context)
+            HttpRequest request, ILogger log, ExecutionContext context)
         {
             var config = Config.CreateFrom(context);
             if (!config.IsValid(out var configErrorMessage))
